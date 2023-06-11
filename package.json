@@ -1,0 +1,23 @@
+{
+  "name": "alexborecky",
+  "version": "1.0.0",
+  "description": "My slick Nuxt.js project",
+  "author": "Alex Borecky",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate"
+  },
+  "dependencies": {
+    "@nuxtjs/style-resources": "^1.2.1",
+    "nuxt": "^2.0.0"
+  },
+  "devDependencies": {
+    "pug": "^3.0.2",
+    "pug-plain-loader": "^1.1.0",
+    "sass": "^1.57.1",
+    "sass-loader": "^10.4.1"
+  }
+}

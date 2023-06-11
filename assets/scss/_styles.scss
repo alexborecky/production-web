@@ -1,0 +1,30 @@
+* {
+    font-family: "area-normal", sans-serif;
+    font-style: normal;
+    color: white;
+}
+
+
+.logo-type {
+    font-family: "littlebit-dotty-variable", sans-serif;
+    font-variation-settings: "dots" 1;
+    color: $accent-yellow;
+    font-size: 24px;
+}
+
+h1 {
+    color: white;
+    font-weight: 400;
+    font-size: 60px;
+    letter-spacing: -2%;
+    text-align: left;
+    line-height: 72px;
+}
+
+h2 {
+    font-weight: 300;
+}
+
+a:hover {
+    color: #E3FF34 !important;
+}
