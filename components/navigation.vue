@@ -7,9 +7,9 @@
             </nuxt-link>
             <div class="links flex middle">
                 <ul class="flex center">
-                    <li><nuxt-link to="/proces">Work</nuxt-link></li>
-                    <li><nuxt-link to="/sluzby">About</nuxt-link></li>
-                    <li><nuxt-link to="/o-nas">Contact</nuxt-link></li>
+                    <li><nuxt-link to="/">Work</nuxt-link></li>
+                    <li><nuxt-link to="/about">About</nuxt-link></li>
+                    <li><nuxt-link to="/contact">Contact</nuxt-link></li>
                 </ul>
             </div>
             <sideBar/>
@@ -75,7 +75,7 @@ export default {
     justify-content: center;
     transition: 0.2s all ease-out;
     
-    @media only screen and (max-width: 960px) {
+    @media only screen and (max-width: 720px) {
         height: 80px;
         position: fixed !important;
         margin-top: 0;

@@ -1,32 +1,28 @@
 <template>
     <div class="main-container contact">
-        <div class="full hero flex flex-center">
+        <div class="main-container flex flex-center">
             <div class="container flex column">
                 <h1>Get in touch!</h1>
-                <ul>
-                    <li><external-button
-                        text="Instagram"
-                        linkTo="https://instagram.com/alex.borecky"
-                        />
+                <ul class="flex">
+                    <li class="flex center"><a href="https://calendly.com/boreckyalex/chat-with-alex" target="_blank">Book a meeting</a>
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M8 24L23.5 8.5" stroke="#EDEDED" stroke-linecap="square" stroke-linejoin="round"/>
+                            <path d="M11 8H24V21" stroke="#EDEDED" stroke-linecap="square" stroke-linejoin="round"/>
+                        </svg>
                     </li>
-                    <li><external-button
-                        text="Email"
-                        linkTo="mailto:boreckyalex@gmail.com"
-                        />
+                    <li class="flex center"><a href="mailto:boreckyalex@gmail.com" target="_blank">Email</a>
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M8 24L23.5 8.5" stroke="#EDEDED" stroke-linecap="square" stroke-linejoin="round"/>
+                            <path d="M11 8H24V21" stroke="#EDEDED" stroke-linecap="square" stroke-linejoin="round"/>
+                        </svg>
                     </li>
-                    <li><external-button
-                        text="IMDb"
-                        linkTo="https://www.imdb.com/name/nm8879254/?ref_=ext_shr_lnk"
-                        />
+                    <li class="flex center"><a href="https://www.instagram.com/alex.borecky/" target="_blank">Instagram</a>
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M8 24L23.5 8.5" stroke="#EDEDED" stroke-linecap="square" stroke-linejoin="round"/>
+                            <path d="M11 8H24V21" stroke="#EDEDED" stroke-linecap="square" stroke-linejoin="round"/>
+                        </svg>
                     </li>
-                </ul>   
-                <div class="bio flex">
-                    <h2>Bio</h2>
-                    <external-button
-                    text="Read"
-                    linkTo="https://www.imdb.com/name/nm8879254/bio?ref_=nm_ov_bio_sm"
-                    />
-                </div>             
+                </ul>
             </div>
         </div>
     </div>
@@ -42,40 +38,47 @@ import externalButton from '../../components/externalButton.vue'
 
 <style lang="scss" scoped>
 
-.contact {
-    .hero {
-        background-image: url(~/assets/images/Contact.jpg);
-        background-size: cover;
-        @media (max-width: 500px) {
-            background-size: auto 100%;
-            background-position: 60% 100%;
+ul {
+    margin-top: 80px;
+    padding-left: 0px;
+    text-align: left;
+    list-style: none;
+    li {
+        text-decoration: none;
+        margin-bottom: 8px;
+        margin-right: 64px;
+        a {
+            text-decoration: none;
+            font-size: 24px;
+            line-height: 40px;
+            letter-spacing: -1.12%;
         }
-        .container {
-            align-items: flex-start;
-            h1 {
-                font-size: 80px;
-                font-weight: 300;
-            }
-            ul {
-                margin: 40px 0;
-                padding-left: 0 !important;
-                list-style: none;
-                li {
-                    margin: 8px 0;
-                }
-            }
-            h2 {
-                font-size: 40px;
-                margin-right: 24px;
-                margin-bottom: 0 !important;
-            }
-            .bio {
-                align-items: flex-end;
-                .text-button {
-                    margin-bottom: 4px;
-                }
+        svg {
+            margin-left: 8px;
+            transition: ease-in-out .2s; 
+            path {
+                transition: ease-in-out .2s;
             }
         }
+        &:hover {
+            svg {
+                path {
+                    stroke:#E3FF34;
+                }
+                transform: translate(4px ,-4px);
+            }
+        }
+    }
+    @media (max-width: 960px) {
+        flex-flow: column;
+    }
+}
+
+h1 {
+    @media (max-width: 600px) {
+        font-size: 40px;
+        line-height: 52px;
+        letter-spacing: -1.16%;
     }
 }
 
