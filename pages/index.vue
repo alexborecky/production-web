@@ -4,7 +4,7 @@
       <div class="container flex column">
         <h1>Hi, I’m Alex! An award winning director, actor, screenwriter and producer.</h1>
         <div class="projects">
-          <nuxt-link to="/untold" class="featured project">
+          <nuxt-link to="/untoldpieces" class="featured project">
             <div class="project-info">
               <h2>Untold Pieces</h2>
               <p>2023</p>

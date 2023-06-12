@@ -7,7 +7,7 @@
                     <p>The page is currently being coded and is currently unavailable.</p>
                 </div>
                 <div class="trailer-message">
-                    <h2> You can <a href="https://youtu.be/xLExJm6A13A" target="_blank">watch the film</a> in the meantime! </h2>
+                    <h2> You can <a href="https://youtu.be/yaOg0qta7JU" target="_blank">watch the trailer</a> in the meantime! </h2>
                 </div>
                 <nuxt-link to="/" class="back-home flex center">
                     <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">

@@ -33,7 +33,11 @@ h1 {
 
 h2 {
     font-weight: 300;
-    
+    @media (max-width: 720px) {
+        font-size: 20px;
+        line-height: 28px;
+        letter-spacing: -1.16%;
+    }
 }
 
 a {
